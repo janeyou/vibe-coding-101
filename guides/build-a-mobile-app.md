@@ -11,10 +11,10 @@ Get an app running on your phone — iOS, Android, or both. Two paths: **React N
 ## Choose Your Path
 
 
-| Approach                | Best For                                        | Languages  | Platforms                   |
-| ----------------------- | ----------------------------------------------- | ---------- | --------------------------- |
-| **React Native + Expo** | Teams with web experience, cross-platform needs | TypeScript | iOS + Android               |
-| **SwiftUI**             | iOS-first apps, best native experience          | Swift      | iOS only (+ macOS, watchOS) |
+| Path | Approach                | Best For                                        | Languages  | Platforms                   |
+| ---- | ----------------------- | ----------------------------------------------- | ---------- | --------------------------- |
+| **A** | **React Native + Expo** | Teams with web experience, cross-platform needs | TypeScript | iOS + Android               |
+| **B** | **SwiftUI**             | iOS-first apps, best native experience          | Swift      | iOS only (+ macOS, watchOS) |
 
 
 ---
@@ -30,7 +30,9 @@ Get an app running on your phone — iOS, Android, or both. Two paths: **React N
 
 ### Quick Start: One Prompt (Path A)
 
-Already have Expo tools installed and your Convex + Clerk accounts? Paste this into Cursor Agent mode after creating your Expo project (step A2) to scaffold everything in one shot. Then skip to [A4: Configure Environment](#a4-configure-environment-3-min).
+**This is all you need for Path A.** Create your Expo project (step A2), then paste this prompt into Cursor Agent mode. The AI sets up navigation, auth, backend, and all your screens. You just review, accept, add your API keys, and run it.
+
+The numbered steps below break down the same process if you want to learn how each part works.
 
 > "Set up this Expo project with React Native, Convex for the backend, and Clerk for authentication.
 >
@@ -234,6 +236,33 @@ This produces an `.aab` file (Android App Bundle). To distribute:
 - Convex backend for data persistence and real-time sync
 - Clean, native-feeling animations and interactions
 - Runs on iPhone, iPad, and potentially Mac
+
+### Quick Start: One Prompt (Path B)
+
+**This is all you need for Path B.** Create your project in Xcode (step B2), open it in Cursor, then paste this prompt into Agent mode. The AI sets up the Convex SDK, data model, and all your SwiftUI views. You just review, accept, and run it.
+
+The numbered steps below break down the same process if you want to learn how each part works.
+
+> "Set up this SwiftUI project with the Convex Swift SDK. Add the Convex Swift package dependency (https://github.com/get-convex/convex-swift).
+>
+> Create:
+> - A ConvexClient singleton in Services/ConvexService.swift that connects to my Convex deployment
+> - A Config.swift with the Convex URL placeholder
+> - convex/schema.ts with tables for [describe your data — e.g., items with title, description, status, userId]
+> - Convex query and mutation functions for CRUD operations
+>
+> Build the main app with SwiftUI:
+> 1. A NavigationStack with a list of [items] fetched from Convex
+> 2. A detail view when tapping an item
+> 3. A sheet to create new items with a form
+> 4. Swipe-to-delete on list items
+> 5. Use SF Symbols for icons, modern iOS 18 design
+>
+> Use MVVM architecture with ObservableObject view models."
+
+Replace `[describe your data]` and `[items]` with your actual data model.
+
+> **Power user tip:** Install the [AI Dev Stack skill](https://github.com/janeyou/ai-dev-stack-cursor-skill) for ongoing AI context beyond the initial scaffold. It teaches Cursor your preferred patterns across all projects.
 
 ### B1: Install Xcode (~20 min)
 

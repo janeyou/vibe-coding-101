@@ -21,7 +21,9 @@ Create a real web app where users sign in with Google, work with their own data,
 
 ## Quick Start: One Prompt
 
-Already done the setup guides and have your Convex + Clerk accounts? Paste this single prompt into Cursor Agent mode to scaffold your entire app in one shot. Then skip to [Step 2: Set Up Environment Variables](#step-2-set-up-environment-variables-3-min).
+**This is all you need.** Paste this prompt into Cursor Agent mode and the AI builds your entire app — project setup, auth wiring, database schema, UI, everything. You just review, accept, add your API keys, and run it.
+
+The step-by-step guide below breaks down the same process into smaller pieces if you want to learn how each part works.
 
 > "Create a full-stack web app in a new Vite project with the React + TypeScript template. Use Tailwind CSS v4 with the @tailwindcss/vite plugin, Convex for the backend, and Clerk for authentication.
 >
@@ -46,7 +48,11 @@ Replace `[describe your data]` with your actual data model (tasks, notes, contac
 
 ---
 
-## Two Flavors
+## Step-by-Step Guide (Learn by Doing)
+
+The prompt above handles everything. Follow these steps if you want to understand what's happening under the hood — or if you prefer to build piece by piece.
+
+### Two Flavors
 
 Most people should start with the default (Step 1). The Next.js option is there if you specifically need it — if you're not sure, you don't.
 

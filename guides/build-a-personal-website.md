@@ -17,7 +17,9 @@ Get a fast, beautiful personal website live on the internet — a portfolio, blo
 
 ## Quick Start: One Prompt
 
-Already done the setup guides? Paste this single prompt into Cursor Agent mode to scaffold your entire project in one shot. Then skip to [Step 4: Preview Locally](#step-4-preview-locally-1-min).
+**This is all you need.** Paste this prompt into Cursor Agent mode and the AI builds your entire project — files, components, styling, everything. You just review, accept, and run it.
+
+The step-by-step guide below breaks down the same process into smaller pieces if you want to learn how each part works.
 
 > "Create a personal website in a new Vite project with the React + TypeScript template. Use Tailwind CSS v4 with the @tailwindcss/vite plugin.
 >
@@ -45,7 +47,11 @@ Replace the placeholder content with your own info, or ask the AI to iterate aft
 
 ---
 
-## Step 1: Create the Project (~3 min)
+## Step-by-Step Guide (Learn by Doing)
+
+The prompt above handles everything. Follow these steps if you want to understand what's happening under the hood — or if you prefer to build piece by piece.
+
+### Step 1: Create the Project (~3 min)
 
 Open Terminal and run:
 

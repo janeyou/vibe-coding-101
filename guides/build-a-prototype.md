@@ -26,7 +26,9 @@ Turn an idea into a working demo you can share with a live link. Perfect for tes
 
 ## Quick Start: One Prompt
 
-Already done the setup guides? Write your app description (see the template below), then paste this single prompt into Cursor Agent mode. It scaffolds everything in one shot — skip to [Step 3: Connect Convex](#step-3-connect-convex-3-min) afterward.
+**This is all you need.** Write your app description (see the template in Step 1), paste it into this prompt, and give it to Cursor Agent mode. The AI creates your entire prototype — schema, backend functions, UI, everything. You just review, accept, and run it.
+
+The step-by-step guide below breaks down the same process into smaller pieces if you want to learn how each part works.
 
 > "Create a prototype web app in a new Vite project with the React + TypeScript template. Use Tailwind CSS v4 with the @tailwindcss/vite plugin and Convex for the backend.
 >
@@ -47,7 +49,11 @@ Already done the setup guides? Write your app description (see the template belo
 
 ---
 
-## Step 1: Describe What You're Building (~2 min)
+## Step-by-Step Guide (Learn by Doing)
+
+The prompt above handles everything. Follow these steps if you want to understand what's happening under the hood — or if you prefer to build piece by piece.
+
+### Step 1: Describe What You're Building (~2 min)
 
 Before touching code, write a one-paragraph description of your prototype. This becomes your prompt for the AI.
 
