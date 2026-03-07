@@ -121,6 +121,17 @@ For bigger tasks, use **Agent mode** (the toggle at the top of the chat panel). 
 
 This is your power tool. For building from scratch, always use Agent mode.
 
+### When to Keep the Same Agent vs. Start a New One
+
+Each agent session accumulates context about your project. Managing this well saves you time and money (AI requests).
+
+| Do this | When |
+|---------|------|
+| **Keep the same agent** | Tasks are related — same feature, same refactoring effort, or follow-up fixes. The agent already knows your code and can build on what it did. |
+| **Start a new agent** | The task is entirely unrelated, or you want to try a different approach without polluting your current session's context. |
+
+Starting a new agent for every small change wastes context. Keeping one agent for everything unrelated bloats it. Find the balance: **one agent per feature or goal.**
+
 ---
 
 ## Step 5: (Optional) Add Companion Skills
